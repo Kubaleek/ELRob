@@ -3,15 +3,23 @@
 import ElectroLoading from "@/components/Loading";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const savedLoadingState = localStorage.getItem('loadingState');
+    
+    if (savedLoadingState === 'false') {
       setLoading(false);
-    }, 2000); // Czas ładowania
-    return () => clearTimeout(timer);
+    } else {
+      const timer = setTimeout(() => {
+        setLoading(false);
+        localStorage.setItem('loadingState', 'false');
+      }, 2000); // Czas ładowania
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (
@@ -23,7 +31,13 @@ export default function Home() {
           </motion.div>
         ) : (
           <motion.div key="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="absolute inset-0 bg-[#141414]">
-            <p className="text-white">Test</p>
+            <Navbar />
+            <main>
+
+            </main>
+            <footer>
+
+            </footer>
           </motion.div>
         )}
       </AnimatePresence>
