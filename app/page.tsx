@@ -3,7 +3,7 @@
 import ElectroLoading from "@/components/Loading";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Navbar from "@/components/Navbar";
+import Navigation from "@/components/Navbar/Navbar";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -30,8 +30,9 @@ export default function Home() {
             <ElectroLoading />
           </motion.div>
         ) : (
-          <motion.div key="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="absolute inset-0 bg-[#141414]">
-            <Navbar />
+          <motion.div key="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="absolute inset-0 bg-[#141414] p-4">
+            <header></header>
+            <Navigation />
             <main>
 
             </main>
