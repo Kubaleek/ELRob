@@ -19,7 +19,7 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-[#141414] max-w-[1280px] flex justify-between items-center mx-auto relative">
+    <nav className="bg-[#141414] max-w-7xl flex justify-between items-center mx-auto relative">
       <Logo />
       <ul className="hidden lg:flex gap-4">
         {items.map((item, id) => (

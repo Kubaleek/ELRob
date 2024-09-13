@@ -32,8 +32,8 @@ export default function LayoutContainer({ children } : {children: ReactNode}) {
             ) : (
               <motion.div key="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="absolute inset-0 bg-[#141414] p-4">
                 <Header />
-                <main>
-                    {children}
+                <main className="container mx-auto max-w-7xl flex-grow text-pretty leading-relaxed text-justify">
+                  {children}
                 </main>
               </motion.div>
             )}
