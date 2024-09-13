@@ -9,3 +9,10 @@
 /* #7f7f7f */
 /* #f7f7f7 */
 /* #ffffff */
+
+.bgOverlay {
+    background-image: url('assets/BgOverlay.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}

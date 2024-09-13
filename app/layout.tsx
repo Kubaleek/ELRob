@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Providers } from "../components/nextui/NextUIProvider";
+import { Providers } from "../components/NextUIProvider";
 import { Inter } from 'next/font/google'
-import LayoutContainer from "../components/content/LayoutContainer";
+import LayoutContainer from "../components/LayoutContainer";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl" className='bg-[#141414] text-[#f7f7f7]'>
-      <body className={`${inter.className} text-small sm:text-medium font-normal text-pretty leading-relaxed`}>
+    <html lang="pl" className='bg-[#141414] backdrop-blur-3xl text-[#f7f7f7] overflow-hidden'>
+      <body className={`${inter.className} text-small sm:text-medium font-normal text-pretty leading-relaxed `}>
         <Providers>
           <LayoutContainer>
             {children}

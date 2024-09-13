@@ -6,8 +6,8 @@ import { Button, Divider } from "@nextui-org/react";
 
 export default function Header() {
     return (
-      <div>
-        <header className="flex flex-col gap-2 sm:flex-row max-w-7xl justify-end items-center mx-auto">
+      <div className="max-w-7xl mx-auto">
+        <header className="flex flex-col gap-2 sm:flex-row justify-end items-center">
           <p className="text-pretty leading-relaxed w-full font-thin text-small sm:text-medium">Elektryk i usługi Elektryczne</p>
           <div className="flex justify-normal sm:justify-end items-center gap-3 w-full">
             <Button startContent={<LocalPhoneIcon fontSize="small"/>} isDisabled  className="opacity-100" radius="none" variant="flat" color="warning" size="sm">
