@@ -12,8 +12,8 @@ import HeroImg4 from "../../app/assets/świadełka.jpg";
 export default function Gallery() {
     return (
         <section className="xl:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
-                <div className="hidden md:flex justify-center items-center relative lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center">
+                <div className="hidden lg:flex justify-center items-center relative lg:px-8">
                     <NextImage alt="Koło" className="z-0 w-full h-full relative" src={Blob} width={500} height={500} />
                     <div className="absolute inset-0 flex justify-center items-center z-10 lg:px-8">
                         <NextImage alt="Koło" className="z-0 w-full h-full relative lg:px-8" src={OvRealizacje} width={500} height={500} />
