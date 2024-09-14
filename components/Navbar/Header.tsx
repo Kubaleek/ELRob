@@ -9,11 +9,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto">
         <header className="flex flex-col gap-2 sm:flex-row justify-end items-center">
           <p className="text-pretty leading-relaxed w-full font-thin text-small sm:text-medium">Elektryk i usługi Elektryczne</p>
-          <div className="flex justify-normal sm:justify-end items-center gap-3 w-full">
+          <div className="flex flex-col sm:flex-row justify-normal sm:justify-end sm:items-center gap-3 w-full">
             <Button startContent={<LocalPhoneIcon fontSize="small"/>} isDisabled  className="opacity-100" radius="none" variant="flat" color="warning" size="sm">
               737 593 320
             </Button>
-            <Button startContent={<LocalPostOfficeIcon fontSize="small"/>} isDisabled  className="opacity-100" radius="none" variant="flat" color="warning" size="sm">
+            <Button startContent={<LocalPostOfficeIcon fontSize="small"/>} isDisabled  className="opacity-100 " radius="none" variant="flat" color="warning" size="sm">
               robert.krol.el@gmail.com
             </Button>
           </div>

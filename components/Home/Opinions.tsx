@@ -5,6 +5,8 @@ import { Button } from "@nextui-org/react";
 import Blob from "../../app/assets/blob.svg";
 import OvOpinie from "../../app/assets/OvOpinie.svg";
 import NextImage from 'next/image';
+import { Avatar, AvatarIcon } from "@nextui-org/react";
+
 
 export default function Opinions() {
     return (
@@ -20,6 +22,30 @@ export default function Opinions() {
                                 <span className="text-white md:text-2xl lg:text-4xl">Nowsze Opinie o </span> EL-ROB Elektro
                             </h1>
                             <Divider className="h-[1px] bg-[#ef9c00] max-w-20" />
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4">
+                            <Card className="bg-[#262626] text-white rounded border-2 border-[#ef9c00]/45">
+                                <CardHeader className="flex gap-3 pb-0">
+                                    <Avatar icon={<AvatarIcon />} classNames={{base: "bg-gradient-to-br from-[#FFB457] to-[#FF705B]",icon: "text-black/80",}}/>
+                                    <div>
+                                        <p className="text-justify sm:text-medium font-semibold tracking-widest text-[#ef9c00]">Kuba Kowalski</p>
+                                    </div>
+                                </CardHeader>
+                                <CardBody>
+                                    <p className="text-tiny sm:text-small text-pretty leading-relaxed text-[#7f7f7f] text-justify">Provides a plugin to customize default themes, you can change all semantic tokens or create an entire new theme.</p>
+                                </CardBody>
+                            </Card>
+                            <Card className="bg-[#262626] text-white rounded border-2 border-[#ef9c00]/45">
+                                <CardHeader className="flex gap-3 pb-0">
+                                    <Avatar icon={<AvatarIcon />} classNames={{base: "bg-gradient-to-br from-[#FFB457] to-[#FF705B]",icon: "text-black/80",}}/>
+                                    <div>
+                                        <p className="text-justify sm:text-medium font-semibold tracking-widest text-[#ef9c00]">Kuba Kowalski</p>
+                                    </div>
+                                </CardHeader>
+                                <CardBody>
+                                    <p className="text-tiny sm:text-small text-pretty leading-relaxed text-[#7f7f7f] text-justify">Provides a plugin to customize default themes, you can change all semantic tokens or create an entire new theme.</p>
+                                </CardBody>
+                            </Card>
                         </div>
                         <div>
                             <Button as={Link} href="/realizacje" radius="none" color="warning" variant="shadow" className="text-white">

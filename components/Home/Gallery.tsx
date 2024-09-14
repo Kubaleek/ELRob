@@ -28,7 +28,7 @@ export default function Gallery() {
                         </div>
                         <div>
                             <Button as={Link} href="/realizacje" radius="none" color="warning" variant="shadow" className="text-white">
-                                Zobacz pozostałe Realizacje
+                                Zobacz Realizacje
                             </Button>
                         </div>
                     </div>
