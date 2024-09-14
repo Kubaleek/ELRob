@@ -25,11 +25,6 @@ export default function Hero() {
               voluptatibus tempora mollitia? Provident maiores nesciunt
               doloremque, repellat eius quod cupiditate?
             </p>
-            <div>
-              <Button as={Link} href="/o-firmie" radius="none" color="warning" variant="shadow" className="text-white">
-                Więcej o nas
-              </Button>
-            </div>
           </div>
           <div className="col-span-12 lg:col-span-6 hidden lg:flex px-5">
             <div className="gap-6 grid grid-cols-12 mx-auto max-h-96">
