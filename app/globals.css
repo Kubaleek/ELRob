@@ -16,3 +16,16 @@
     background-size: cover;
     width: 100%;
 }
+.bgHero {
+    background-image: url('assets/BgHero.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.bgOverlayHero {
+    background-image: url('assets/BgHero-Right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}

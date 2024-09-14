@@ -39,7 +39,7 @@ export default function Navigation() {
       <Button as={Link} href="/kontakt" radius="none" color="warning" variant="shadow" className="lg:flex hidden text-white">Skontaktuj się</Button>
       <div className="lg:hidden flex items-center">
         <Hamburger toggled={isOpen} toggle={setOpen} color="#ef9c00" rounded />
-        <div className={`fixed justify-between flex flex-col p-4 items-center top-0 left-0 h-full w-48 bg-[#141414] backdrop-blur-3xl bg-opacity-70 border-r border-[#ef9c00] z-40 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
+        <div className={`fixed justify-between flex flex-col p-4 items-center top-0 left-0 h-full w-48 bg-[#1c1c1c] backdrop-blur-3xl bg-opacity-100  border-r border-[#ef9c00] z-40 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
           <div>
             <Logo />
             <Divider className="h-[1px] bg-[#ef9c00] my-3" />
@@ -52,7 +52,7 @@ export default function Navigation() {
                   href={item.href}
                   radius="none"
                   color="warning"
-                  variant="ghost"
+                  variant="shadow"
                   className={`text-white !focus:text-white transition-all duration-250 delay-75 w-full`}>
                   {item.label}
                 </Button>
