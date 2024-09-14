@@ -34,7 +34,7 @@ export default function LayoutContainer({ children }: { children: ReactNode }) {
             <div className="absolute inset-0 backdrop-blur-lg"></div>
             <div className="bg-[#1c1c1c] h-full max-w-7xl mx-auto p-4 border border-[#ef9c00] bgOverlayHero  z-50 relative overflow-y-auto md:rounded-tl-large md:rounded-tr-large md:rounded-bl-3xl md:rounded-br-xl">
               <Header />
-              <motion.main className="container flex flex-col gap-6 mx-auto max-w-7xl text-tiny sm:text-medium flex-grow text-pretty leading-relaxed text-justify pt-12 md:pt-16" transition={{ duration: 0.7, delayChildren: 0.6, staggerChildren: 0.8 }}>
+              <motion.main className="container flex flex-col gap-6 mx-auto max-w-7xl text-tiny sm:text-medium flex-grow text-pretty leading-relaxed text-justify pt-12 pb-12 md:pt-16" transition={{ duration: 0.7, delayChildren: 0.6, staggerChildren: 0.8 }}>
                 {children}
               </motion.main>
             </div>
