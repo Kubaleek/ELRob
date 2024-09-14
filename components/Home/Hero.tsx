@@ -9,13 +9,13 @@ import NextImage from 'next/image';
 
 export default function Hero() {
     return (
-        <section className="flex flex-col gap-12">
+      <section className="flex flex-col gap-12 xl:px-8">
         <div className="grid grid-cols-12 gap-6 items-center justify-center">
-          <div className="col-span-12 lg:col-span-6 flex flex-col gap-4 xl:px-8">
+          <div className="col-span-12 lg:col-span-6 flex flex-col gap-4">
             <div className="flex flex-col gap-2">
-              <h1 className="text-pretty leading-relaxed text-xl md:text-3xl font-bold text-[#ef9c00]">
-                EL-ROB <span className="text-white md:text-4xl">Elektro</span>{" "}
-                Usługi <span className="text-white md:text-4xl">Łódź</span>
+              <h1 className="text-pretty leading-relaxed text-xl md:text-xl lg:tracking-widest font-bold text-[#ef9c00]">
+                EL-ROB <span className="text-white md:text-2xl lg:text-4xl">Elektro</span>{" "}
+                Usługi <span className="text-white md:text-2xl lg:text-4xl">Łódź</span>
               </h1>
               <Divider className="h-[1px] bg-[#ef9c00] max-w-20" />
             </div>
@@ -45,7 +45,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 xl:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           <Card className="bg-[#262626] text-white rounded border-2 border-[#ef9c00]/45">
             <CardHeader className="flex gap-3 pb-0">
               <div className="bg-[#ef9c00]/25 text-[#ef9c00] p-2 rounded-full items-center">

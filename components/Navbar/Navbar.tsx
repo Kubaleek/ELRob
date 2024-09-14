@@ -14,7 +14,7 @@ export default function Navigation() {
     { label: "Strona Główna", href: "/" },
     { label: "O Firmie", href: "/o-firmie" },
     { label: "Oferta", href: "/oferta" },
-    { label: "Galeria", href: "/galleria" },
+    { label: "Realizacje", href: "/realizacje" },
     { label: "Opinie", href: "/opinie" }, 
   ];
 

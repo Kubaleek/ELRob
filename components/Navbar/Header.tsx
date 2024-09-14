@@ -11,10 +11,10 @@ export default function Header() {
           <p className="text-pretty leading-relaxed w-full font-thin text-small sm:text-medium">Elektryk i usługi Elektryczne</p>
           <div className="flex justify-normal sm:justify-end items-center gap-3 w-full">
             <Button startContent={<LocalPhoneIcon fontSize="small"/>} isDisabled  className="opacity-100" radius="none" variant="flat" color="warning" size="sm">
-              666 666 666
+              737 593 320
             </Button>
             <Button startContent={<LocalPostOfficeIcon fontSize="small"/>} isDisabled  className="opacity-100" radius="none" variant="flat" color="warning" size="sm">
-              test@gmail.com
+              robert.krol.el@gmail.com
             </Button>
           </div>
         </header>
