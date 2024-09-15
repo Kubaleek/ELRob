@@ -9,21 +9,11 @@
 /* #7f7f7f */
 /* #f7f7f7 */
 /* #ffffff */
-.bgHero {
-    background-image: url('assets/BgHero.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
 
-.bgOverlayHero {
-    background-image: url('assets/BgOverlay.svg');
-    background-blend-mode: overlay;
-    background-origin: border-box;
-    background-size: cover;
-    background-clip: border-box;
+.bgOverlay {
+    background-image: url('./assets/BgOverlay.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
+    background-position: center center;
+    background-blend-mode: overlay;
 }
