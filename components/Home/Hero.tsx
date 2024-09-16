@@ -15,7 +15,7 @@ export default function Hero() {
 
   return (
     <motion.section
-      className="relative flex flex-col gap-6 md:gap-3 bgOverlay md:mb-12 lg:mb-24"
+      className="relative flex flex-col gap-6 md:gap-3 bgOverlay sm:mb-8 md:mb-12 lg:mb-24"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}>
@@ -80,9 +80,6 @@ export default function Hero() {
               EL-ROB Elektro Usługi Łódź
             </span>{" "}
             – Profesjonalne usługi elektryczne dla domu i firmy. Zajmujemy się
-            instalacjami, modernizacjami oraz naprawami, zapewniając
-            bezpieczeństwo i najwyższą jakość wykonania. Twój zaufany partner w
-            dziedzinie elektryki.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -110,9 +107,8 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
-      {/* Obserwowany obrazek */}
       <motion.div
-        ref={ref} // Referencja do obserwowanego elementu
+        ref={ref}
         className="hidden sm:flex relative mx-auto inset-y-6 md:inset-y-12 max-w-sm md:max-w-xl lg:max-w-3xl"
         initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
