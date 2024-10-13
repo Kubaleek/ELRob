@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl" className='bg-[#1c1c1c] text-[#f7f7f7] overflow-x-hidden'>
-      <body className={`${inter.className} text-small sm:text-medium font-normal text-pretty leading-relaxed overflow-x-hidden`}>
+    <html lang="pl" className='!bg-[#1c1c1c] text-[#f7f7f7] overflow-x-hidden'>
+      <body className={`${inter.className} !bg-[#1c1c1c] backdrop-blur-3xl text-[#f7f7f7]  font-mono text-small sm:text-medium text-pretty leading-relaxed overflow-x-hidden`}>
         <NextUIProvider>
           <LayoutContainer>
             {children}

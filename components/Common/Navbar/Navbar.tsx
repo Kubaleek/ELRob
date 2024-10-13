@@ -6,19 +6,20 @@ import { Sling as Hamburger } from 'hamburger-react';
 import { useState } from "react";
 import { Divider } from "@nextui-org/react";
 
+export const items = [
+  { label: "Strona Główna", href: "/" },
+  { label: "O Firmie", href: "/o-firmie" },
+  { label: "Oferta", href: "/oferta" },
+  { label: "Cennik", href: "/cennik" },
+  { label: "Realizacje", href: "/realizacje" },
+  { label: "Opinie", href: "/opinie" }, 
+];
+
 export default function Navigation() {
   const [isOpen, setOpen] = useState(false);
   const active = usePathname();
 
-  const items = [
-    { label: "Strona Główna", href: "/" },
-    { label: "O Firmie", href: "/o-firmie" },
-    { label: "Oferta", href: "/oferta" },
-    { label: "Cennik", href: "/cennik" },
-    { label: "Realizacje", href: "/realizacje" },
-    { label: "Opinie", href: "/opinie" }, 
-    { label: "Galeria", href: "/galeria" },
-  ];
+
 
   return (
     <nav className="flex justify-between items-center relative">
@@ -40,7 +41,7 @@ export default function Navigation() {
       </ul>
       <div className="lg:hidden flex items-center">
         <Hamburger toggled={isOpen} toggle={setOpen} color="#ef9c00" rounded />
-        <div className={`fixed justify-start gap-6 flex flex-col p-4 items-center top-0 left-0 h-full w-48 bg-[#1c1c1c] backdrop-blur-3xl bg-opacity-45  border-r border-[#ef9c00] z-40 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
+        {/* <div className={`fixed justify-start gap-6 flex flex-col p-4 items-center top-0 left-0 h-full w-48 bg-[#1c1c1c] backdrop-blur-3xl   border-r border-[#ef9c00] z-40 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
           <div>
             <Logo />
             <Divider className="h-[1px] bg-[#ef9c00] my-3" />
@@ -60,7 +61,7 @@ export default function Navigation() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

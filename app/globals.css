@@ -11,7 +11,39 @@
 /* #ffffff */
 
 .bgOverlay {
-    background-image: url('./assets/BgOverlay.svg');
+    background-image: url('../public/assets/BgOverlay.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+
+.bgOverlay2 {
+    background-image: url('../public/assets/BgOverlay2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+
+.bgOverlay3 {
+    background-image: url('../public/assets/BgOverlay3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+
+.bgOverlay4 {
+    background-image: url('../public/assets/BgOverlay4.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+
+.bgOverlay22 {
+    background-image: url('../public/assets/BgOverlay22.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
